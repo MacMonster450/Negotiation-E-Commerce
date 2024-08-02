@@ -1,0 +1,642 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+body{
+	font-style: Arial;
+	/*background: url(lapwall.jpg) no-repeat;
+	background-size: cover;*/
+	padding-bottom: 8em;
+}
+nav.N1{
+	height: 3rem;
+	width: 100%;
+	background: linear-gradient(to right,rgb(75, 74, 75),rgb(53, 51, 52));
+}
+nav.N1 label{
+	font-size: 2em;
+	color: white;
+	line-height: 50px;
+	padding: 0 50px;
+	font-weight: bolder;
+}
+nav.N1 ul{
+	float: right;
+	padding-right: 40px;
+}
+nav.N1 li{
+	display: inline-block;
+	line-height: 50px;
+	margin: 0 7px;
+}
+nav.N1 a{
+	font-size: 1.1em;
+	color: white;
+	font-style: Arial;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	padding: 8px 10px;
+}
+nav.N1 a:hover{
+	border: 1px solid white;
+}
+
+
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 14px;
+}
+
+.product .AddtoCart {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.product .AddtoCart:hover {
+    background-color: #e68a00;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 20;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 2;
+}
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.form-container input[type=text] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.form-container .btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.form-container .cancel {
+  background-color: #ff3333;
+}
+
+
+
+@media (max-width: 2560){
+	nav.content{
+		width: 2560px;
+	}
+	.content .img1{
+		height: 35vh;
+		width: 30%;
+		padding-left: 35em;
+	}
+	.content .img2{
+		height: 35vh;
+		width: 30%;
+		padding-left: 40px;
+	}
+	.content h1{
+		padding-left: 50px;
+	}
+	.content h2{
+		padding-left: 13em;
+	}
+}
+
+@media (max-width: 1024px){
+
+	nav.content{
+		width: 1024px;
+	}
+	.content .img1{
+		height: 35vh;
+		width: 30%;
+		padding-left: 35em;
+	}
+	.content .img2{
+		height: 35vh;
+		width: 30%;
+		padding-left: 40px;
+	}
+	.content h1{
+		padding-left: 50px;
+	}
+	.content h2{
+		padding-left: 13em;
+	}
+	.fina{
+		width: 100%;
+		height: 50vh;
+		top: 52em;
+		background-color: black;
+		position: absolute;
+	}
+	.fina .last .down{
+		color: white;
+		padding-left: 100px;
+		margin-top: 60px;
+		font-size: 1.5em;
+		position: absolute;
+	}
+	.fina .last .abo{
+		color: white;
+		padding-left: 350px;
+		margin-top: 60px;
+		position: absolute;
+		font-size: 1.5em;
+	}
+	.fina .last .cont{
+		color: white;
+		padding-left: 600px;
+		margin-top: 60px;
+		position: absolute;
+		font-size: 1.5em;
+	}
+	.fina .last .e1{
+		color: rgb(90, 30, 63);
+		font-size: 1.3em;
+		padding-left: 300px;
+		margin-top: 100px;
+		position: absolute;
+	}
+	.fina .last .e2{
+		color: rgb(90, 30, 63);
+		font-size: 1.3em;
+		padding-left: 300px;
+		margin-top: 130px;
+		position: absolute;
+	}
+	.fina .last .ab1{
+		color: rgb(90, 31, 63);
+		font-size: 1.3em;
+		padding-left: 610px;
+		position: absolute;
+		margin-top: 100px;
+	}
+}
+
+@media (max-width: 905px){
+	nav.N1 label{
+		font-size: 2.1em;
+		padding: 0 61px;
+	}
+	nav.N1 ul{
+		padding-right: 18px;
+	}
+	nav.N1 li{
+		margin: 0 5.5px;
+	}
+	nav.N1 a{
+		font-size: 1em;
+		padding: 7.2px 9.2px;
+	}
+	nav.content{
+		width: 768px;
+	}
+	.content .img1{
+		height: 30vh;
+		width: 35%;
+		padding-left: 30em;
+	}
+	.content .img2{
+		height: 30vh;
+		width: 35%;
+		padding-left: 40px;
+	}
+	.content h1{
+		padding-left: 50px;
+	}
+	.content h2{
+		padding-left: 10em;
+	}
+	
+}
+@media (max-width: 778px)
+{
+	nav.N1{
+		height: 4rem;
+	}
+	nav.N1 label{
+		font-size: 2rem;
+		line-height: 60px;
+		padding: 0 60px;
+	}
+	nav.N1 ul{
+		padding-right: 15px;
+	}
+	nav.N1 li{
+		margin: 0 5px;
+		line-height: 70px;
+	}
+	nav.N1 a{
+		font-size: 0.9rem;
+		padding: 7px 9px;
+	}
+	.fina .last .down{
+		color: white;
+		padding-left: 70px;
+		margin-top: 60px;
+		font-size: 1.4em;
+		position: absolute;
+	}
+	.fina .last .abo{
+		color: white;
+		padding-left: 290px;
+		margin-top: 60px;
+		position: absolute;
+		font-size: 1.5em;
+	}
+	.fina .last .cont{
+		color: white;
+		padding-left: 490px;
+		margin-top: 60px;
+		position: absolute;
+		font-size: 1.5em;
+	}
+	.fina .last .ga1{
+		color: rgb(90, 31, 63);
+		font-size: 1.3em;
+		padding-left: 100px;
+		position: absolute;
+		margin-top: 100px;
+	}
+	.fina .last .e1{
+		color: rgb(90, 30, 63);
+		font-size: 1.3em;
+		padding-left: 220px;
+		margin-top: 100px;
+		position: absolute;
+	}
+	.fina .last .e2{
+		color: rgb(90, 30, 63);
+		font-size: 1.3em;
+		padding-left: 220px;
+		margin-top: 130px;
+		position: absolute;
+	}
+	.fina .last .ab1{
+		color: rgb(90, 31, 63);
+		font-size: 1.3em;
+		padding-left: 500px;
+		position: absolute;
+		margin-top: 100px;
+	}
+
+}
+@media (max-width: 730px){
+	
+	nav.N1 ul{
+		position: fixed;
+		width: 65%;
+		height: 20vh;
+		display: flex;
+		background-color: black;
+		left: -100%;
+		transition: all 0.5s;
+	}
+	nav.N1 li{
+		display: block;
+		width: 100%;
+	}
+	nav.N1 ul.slide{
+		left: 0%;
+		transition: all 0.5s;
+	}
+	.icon{
+		float: right;
+		padding-right: 25px;
+		padding-top: 20px;
+	}
+	.icon .line{
+		width: 25px;
+		height: 3px;
+		background-color: white;
+		padding-left: 1px;
+		padding-right: 1px;
+		margin-bottom: 5px;
+		display: block;	
+	}
+	nav.content{
+		width: 730px;
+		height: auto;
+		margin: auto;
+		color: white;
+		position: relative;
+	}
+	.content h1{
+		font-size: 50px;
+		padding-left: 20px;
+		margin-top: 15%;
+		margin-left: 0;
+		letter-spacing: 2px;
+	}
+	.content h2{
+		font-size: 50px;
+		padding-left: 18em;
+		margin-top: 25%;
+	}
+	.content .img1{
+		height: 40vh;
+		width: 40%;
+		padding-left: 40em;
+		position: absolute;
+		top: -20px;
+	}
+	.content .img2{
+		height: 40vh;
+		width: 40%;
+		padding-left: 20px;
+		position: absolute;
+		top: 20em;
+	}
+	.fina{
+		width: 100%;
+		height: 50vh;
+		top: 55em;
+		background-color: black;
+		position: absolute;
+	}
+}
+@media (max-width: 425px)
+{
+	body{
+		padding-bottom: 18em;
+	}
+	nav.N1 label{
+		font-size: 1.5rem;
+		padding: 0 50px;
+	}
+	nav.N1 ul{
+		width: 93%;
+		height: 12vh;
+	}
+
+	nav.content{
+		width: 425px;
+	}
+	.content .img1{
+		height: 30vh;
+		width: 60%;
+		top: 10em;
+		padding-left: 5em;
+	}
+	.content .img2{
+		height: 30vh;
+		width: 60%;
+		top: 33em;
+		padding-left: 5em;
+	}
+	.content h1{
+		padding-left: 55px;
+
+	}
+	.content h2{
+		margin-top: 5em;
+		padding-left: 55px;
+	}
+	
+	.fina .last .down{
+		color: white;
+		padding-left: 60px;
+		margin-top: 60px;
+		font-size: 1.5em;
+		position: absolute;
+	}
+	.fina .last .abo{
+		color: white;
+		padding-left: 250px;
+		margin-top: 60px;
+		position: absolute;
+		font-size: 1.5em;
+	}
+	.fina .last .cont{
+		color: white;
+		padding-left: 150px;
+		margin-top: 150px;
+		position: absolute;
+		font-size: 1.5em;
+	}
+	.fina .last .e1{
+		color: rgb(90, 30, 63);
+		font-size: 1em;
+		padding-left: 200px;
+		margin-top: 100px;
+		position: absolute;
+	}
+	.fina .last .e2{
+		color: rgb(90, 30, 63);
+		font-size: 1em;
+		padding-left: 200px;
+		margin-top: 130px;
+		position: absolute;
+	}
+	.fina .last .ab1{
+		color: rgb(90, 31, 63);
+		font-size: 1.3em;
+		padding-left: 160px;
+		position: absolute;
+		margin-top: 180px;
+	}
+}
+@media (max-width: 375px)
+{
+	
+	nav.N1 label{
+		font-size: 1.5rem;
+		padding: 0 50px;
+	}
+	nav.N1 ul{
+		width: 95%;
+		height: 13vh;
+	}
+	nav.N1 li{
+		margin: 0 1.5px;
+	}
+	nav.content{
+		width: 375px;
+	}
+	.content .img1{
+		height: 30vh;
+		width: 60%;
+		top: 7em;
+		padding-left: 5em;
+	}
+	.content .img2{
+		height: 30vh;
+		width: 60%;
+		top: 28em;
+		padding-left: 5em;
+	}
+	.content h1{
+		font-size: 40px;
+		padding-left: 55px;
+
+	}
+	.content h2{
+		font-size: 40px;
+		margin-top: 6em;
+		padding-left: 57px;
+	}
+	.fina{
+		top: 50em;
+	}
+	.fina .last .e1{
+		color: rgb(90, 30, 63);
+		font-size: 1em;
+		padding-left: 180px;
+		margin-top: 100px;
+		position: absolute;
+	}
+	.fina .last .e2{
+		color: rgb(90, 30, 63);
+		font-size: 1em;
+		padding-left: 180px;
+		margin-top: 130px;
+		position: absolute;
+	}
+}
+@media (max-width: 320px)
+{
+	nav.N1 label{
+		font-size: 1.5rem;
+		padding: 0 50px;
+	}
+	nav.N1 ul{
+		width: 93%;
+		height: 12vh;
+	}
+	nav.N1 li{
+		margin: 0;
+	}
+	nav.N1 a{
+		font-size: 0.8em;
+		padding: 5px 7px;
+	}
+	.icon{
+		float: right;
+		padding-right: 25px;
+		padding-top: 20px;
+	}
+	nav.content{
+		width: 320px;
+	}
+	.content .img1{
+		height: 30vh;
+		width: 60%;
+		top: 7em;
+		padding-left: 5em;
+	}
+	.content .img2{
+		height: 30vh;
+		width: 60%;
+		top: 28em;
+		padding-left: 5em;
+	}
+	.content h1{
+		margin-top: 25%;
+		font-size: 35px;
+		padding-left: 55px;
+
+	}
+	.content h2{
+		font-size: 40px;
+		margin-top: 6em;
+		padding-left: 57px;
+	}
+	.fina .last .down{
+		color: white;
+		padding-left: 40px;
+		margin-top: 40px;
+		font-size: 1.3em;
+	}
+	.fina .last .abo{
+		color: white;
+		padding-left: 200px;
+		margin-top: 40px;
+		position: absolute;
+		font-size: 1.3em;
+	}
+	.fina .last .cont{
+		color: white;
+		padding-left: 120px;
+		margin-top: 150px;
+		position: absolute;
+		font-size: 1.3em;
+	}
+	.fina .last .ga1{
+		color: rgb(90, 31, 63);
+		font-size: 1.3em;
+		padding-left: 70px;
+		position: absolute;
+		margin-top: 80px;
+	}
+	.fina .last .e1{
+		color: rgb(90, 30, 63);
+		font-size: 0.8em;
+		padding-left: 160px;
+		margin-top: 80px;
+		position: absolute;
+	}
+	.fina .last .e2{
+		color: rgb(90, 30, 63);
+		font-size: 0.8em;
+		padding-left: 160px;
+		margin-top: 100px;
+		position: absolute;
+	}
+	.fina .last .ab1{
+		color: rgb(90, 31, 63);
+		font-size: 1.3em;
+		padding-left: 130px;
+		position: absolute;
+		margin-top: 180px;
+	}
+}

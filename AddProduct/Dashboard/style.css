@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    display: block;
+}
+.Topic{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1em;
+	font-size: 1.9em;
+	font-weight: sold;
+}
+.ProductName{
+	font-size: 1.1em;
+	margin-right: 1em;
+}
+.ProductNameInp{
+	padding: auto;
+	border-radius: 5px;
+	font-size: .9em;
+}
+.ProductPrice{
+	margin-top: 1.5em;
+	font-size: 1.1em;
+	margin-right: 1em;
+}
+.PoductPriceInp{
+	margin-top: 1.5em;
+	border-radius: 5px;
+	padding-left: 2px;
+}
+.DesBox{
+	display: grid;
+	grid-template-columns: 10em;
+	margin-top: 1.5em;
+}
+.Descrip{
+	font-size: 1em;
+	margin-bottom: .5em;
+}
+.DescriptionOfProj{
+	width: 44em;
+	height: 10vh;
+	padding: 5px;
+}
+.SubBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1em;
+}
+.Sub{
+	padding: 5px;
+	font-size: .9em;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+.MessText{
+	font-size: 1.05em;
+}
+.Messages{
+	margin-top: .5em;
+	padding: 30px 30px 120px 30px;
+	border: 1px solid black;
+}
+.Upload{
+	margin-bottom: 1em;
+}
+
+
+/*
+<?php
+require '../../Config/config.php';
+$conn = OpenCon();
+
+// Retrieve blob data from the database
+$sql = "SELECT ProductImage FROM products WHERE id = 11"; // Assuming you have a table with a blob_data column
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // Output data of each row
+    while($row = $result->fetch_assoc()) {
+        // Get the blob data
+        $blob_data = $row["ProductImage"];
+
+        // Output the image to the browser
+        header("Content-Type: image/jpg"); // Assuming the blob data is a JPEG image
+        echo $blob_data;
+    }
+} else {
+    echo "0 results";
+}
+CloseCon($conn);
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Image</title>
+</head>
+<body>
+    <img src="image.php" alt="Image from Blob">
+</body>
+</html>
+*/

@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    display: block;
+}
+.Topic{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1em;
+	font-size: 1.9em;
+	font-weight: sold;
+}
+.ProductName{
+	font-size: 1.1em;
+	margin-right: 1em;
+}
+.ProductNameInp{
+	padding: auto;
+	border-radius: 5px;
+	font-size: .9em;
+}
+.CurPrice{
+	margin-top: 1.5em;
+	font-size: 1.1em;
+	margin-right: 1em;
+}
+.CurPriceInp{
+	margin-top: 1.5em;
+	border-radius: 5px;
+	padding-left: 2px;
+}
+.NegoPrice{
+	margin-top: 1.5em;
+	font-size: 1.1em;
+	margin-right: 1em;
+	margin-left: 1em;
+}
+.NegoPriceInp{
+	margin-top: 1.5em;
+	border-radius: 5px;
+	padding: 1px 0px 1px 4px;
+	border: 1px solid black;
+}
+.DesBox{
+	display: grid;
+	grid-template-columns: 10em;
+	margin-top: 1.5em;
+}
+.Descrip{
+	font-size: 1em;
+	margin-bottom: .5em;
+}
+.DescripBox{
+	width: 44em;
+	height: 10vh;
+	padding: 5px;
+}
+.SubBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1em;
+}
+.Sub{
+	padding: 5px;
+	font-size: .9em;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+.MessText{
+	font-size: 1.05em;
+}
+.Messages{
+	margin-top: .5em;
+	padding: 30px 30px 120px 30px;
+	border: 1px solid black;
+}

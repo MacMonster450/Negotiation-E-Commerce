@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+}
+
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 1.5em;
+}
+.Signin-form{
+    padding: 10px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: 15em;
+}
+.signin-input {
+    padding: 10px 53px 10px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.Signin {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.Signin:hover {
+    background-color: #0056b3;
+}
+.field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+}
+.passwordinput{
+    margin: auto;
+}
+.Signin-p{
+    font-size: .8em;
+    margin-top: 1.5em;
+    text-decoration: none;
+}
